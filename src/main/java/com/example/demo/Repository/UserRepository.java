@@ -3,7 +3,10 @@ package com.example.demo.Repository;
 import com.example.demo.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+
 public interface UserRepository extends JpaRepository<User, Long> {
-    User findByEmail(String email);
+    // If you need some basic methods on User, you can add them here, like find by username
+    User findByUsername(String username);
 }
+
 

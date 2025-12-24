@@ -1,10 +1,8 @@
 package com.example.demo.model;
 
-
-import java.util.List;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
+import java.util.List;
 
 @Entity
 public class Patient extends User {
@@ -30,4 +28,3 @@ public class Patient extends User {
         this.appointments = appointments;
     }
 }
-

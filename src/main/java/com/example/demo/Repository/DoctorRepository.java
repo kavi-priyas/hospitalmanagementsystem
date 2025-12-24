@@ -4,7 +4,8 @@ package com.example.demo.Repository;
 import com.example.demo.model.Doctor;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+
 public interface DoctorRepository extends JpaRepository<Doctor, Long> {
-    Doctor findBySpecialization(String specialization);
+    Doctor findByEmail(String email);
 }
 
